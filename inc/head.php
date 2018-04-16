@@ -47,6 +47,6 @@
     </div><!-- /.container-fluid -->
   </nav>
   <div class="container-fluid text-right">
-    <strong>Hello Wilder !</strong>
+    <strong>Hello <?php echo $_SESSION['username']?> !</strong>
   </div>
 </header>
