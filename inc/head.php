@@ -42,11 +42,17 @@
               Cart
             </a>
           </li>
+            <li>
+                <a href="/deconnexion.php" class="btn btn-danger navbar-btn">
+                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    Logout
+                </a>
+            </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
   <div class="container-fluid text-right">
-    <strong>Hello <?php echo $_SESSION['username']?> !</strong>
+    <strong>Hello <?php if (isset($_SESSION['username'])){echo $_SESSION['username'];}?> !</strong>
   </div>
 </header>
